@@ -328,9 +328,9 @@ proxies:
 proxy-groups:
   - name: "🚀 انتخاب خودکار (بهترین)"
     type: url-test
-    url: "http://www.gstatic.com/generate_204"  # آزمایش پینگ با استفاده از این URL
-    interval: 60                              # فاصله زمانی بررسی پینگ (ثانیه)
-    tolerance: 10                             # اختلاف قابل قبول بین پینگ‌ها (درصد)
+    url: "http://www.gstatic.com/generate_204"  
+    interval: 600                              
+    tolerance: 5                             
     proxies:
       - "🇬🇧-hamedp71"
       - "🇬🇧-hamedp71-1"
