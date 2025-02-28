@@ -27,15 +27,15 @@ dns:
   use-hosts: true
   use-system-hosts: false
   nameserver:
-    - '9.9.9.9'
-    - '149.112.112.112'
     - '1.1.1.1'
-    - '1.0.0.1'
+    - '2606:4700:4700::1111'
+    - '8.8.8.8'
+    - '2001:4860:4860::8888'
   proxy-server-nameserver:
-    - '9.9.9.9'
-    - '149.112.112.112'
     - '1.1.1.1'
-    - '1.0.0.1'
+    - '2606:4700:4700::1111'
+    - '8.8.8.8'
+    - '2001:4860:4860::8888'
 tun:
   enable: true
   stack: mixed
@@ -326,35 +326,17 @@ proxies:
     dialer-proxy: "🇮🇷 Warp - IPv6"
 
 proxy-groups:
-  - name: "✅ انتخاب دستی"
-    type: select
-    proxies:
-      - "🇬🇧-hamedp71"
-      - "🇬🇧-hamedp71-1"
-      - "🇳🇱-hamedp71"
-      - "🇺🇦-hamedp71"
-      - "🇷🇺-hamedp71"
-      - "🇺🇸-hamedp71"
-      - "🇩🇪-hamedp71"
-      - "🇲🇩-hamedp71"
-      - "🇳🇱 Amsterdam - IPv4"
-      - "🇮🇷 Warp - IPv4"
-      - "🇩🇪 Warp - IPv4"
-      - "🇮🇷 Warp - IPv6"
-      - "🇸🇪 Warp - IPv6"
-
   - name: "🚀 انتخاب خودکار (بهترین)"
     type: url-test
-    url: "http://www.gstatic.com/generate_204"
-    interval: 120
-    tolerance: 25
+    url: "http://www.gstatic.com/generate_204"  # آزمایش پینگ با استفاده از این URL
+    interval: 60                              # فاصله زمانی بررسی پینگ (ثانیه)
+    tolerance: 10                             # اختلاف قابل قبول بین پینگ‌ها (درصد)
     proxies:
       - "🇬🇧-hamedp71"
       - "🇬🇧-hamedp71-1"
       - "🇳🇱-hamedp71"
       - "🇺🇦-hamedp71"
       - "🇷🇺-hamedp71"
-      - "🇲🇩-hamedp71"
       - "🇺🇸-hamedp71"
       - "🇩🇪-hamedp71"
       - "🇲🇩-hamedp71"
@@ -415,7 +397,7 @@ rules:
   - RULE-SET,phishing,REJECT
   - RULE-SET,cryptominers,REJECT
   - RULE-SET,ads,REJECT
-  - MATCH,✅ انتخاب دستی
+  - MATCH,🚀 انتخاب خودکار (بهترین)
 
 ntp:
   enable: true
