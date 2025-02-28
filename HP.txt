@@ -328,11 +328,29 @@ proxies:
 proxy-groups:
   - name: "🚀 انتخاب خودکار (بهترین)"
     type: url-test
-    url: "http://www.gstatic.com/generate_204"  
-    interval: 600                              
-    tolerance: 5                             
+    url: "http://www.gstatic.com/generate_204"  # آزمایش پینگ با استفاده از این URL
+    interval: 60                              # فاصله زمانی بررسی پینگ (ثانیه)
+    tolerance: 10                             # اختلاف قابل قبول بین پینگ‌ها (درصد)
     proxies:
       - "🇬🇧-hamedp71"
+      - "🇬🇧-hamedp71-1"
+      - "🇳🇱-hamedp71"
+      - "🇺🇦-hamedp71"
+      - "🇷🇺-hamedp71"
+      - "🇺🇸-hamedp71"
+      - "🇩🇪-hamedp71"
+      - "🇲🇩-hamedp71"
+      - "🇳🇱 Amsterdam - IPv4"
+      - "🇮🇷 Warp - IPv4"
+      - "🇩🇪 Warp - IPv4"
+      - "🇮🇷 Warp - IPv6"
+      - "🇸🇪 Warp - IPv6"
+
+  - name: "🌐 گلوبال"
+    type: select
+    proxies:
+      - "🚀 انتخاب خودکار (بهترین)"  # گزینه خودکار
+      - "🇬🇧-hamedp71"               # گزینه دستی
       - "🇬🇧-hamedp71-1"
       - "🇳🇱-hamedp71"
       - "🇺🇦-hamedp71"
@@ -397,7 +415,7 @@ rules:
   - RULE-SET,phishing,REJECT
   - RULE-SET,cryptominers,REJECT
   - RULE-SET,ads,REJECT
-  - MATCH,🚀 انتخاب خودکار (بهترین)
+  - MATCH,🌐 گلوبال
 
 ntp:
   enable: true
