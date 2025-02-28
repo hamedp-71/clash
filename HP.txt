@@ -343,27 +343,6 @@ proxy-groups:
       - "🇮🇷 Warp - IPv6"
       - "🇸🇪 Warp - IPv6"
 
-  - name: "🚀 انتخاب خودکار (بهترین)"
-    type: url-test
-    url: "http://www.gstatic.com/generate_204"
-    interval: 30
-    tolerance: 100
-    proxies:
-      - "🇬🇧-hamedp71"
-      - "🇬🇧-hamedp71-1"
-      - "🇳🇱-hamedp71"
-      - "🇺🇦-hamedp71"
-      - "🇷🇺-hamedp71"
-      - "🇲🇩-hamedp71"
-      - "🇺🇸-hamedp71"
-      - "🇩🇪-hamedp71"
-      - "🇲🇩-hamedp71"
-      - "🇳🇱 Amsterdam - IPv4"
-      - "🇮🇷 Warp - IPv4"
-      - "🇩🇪 Warp - IPv4"
-      - "🇮🇷 Warp - IPv6"
-      - "🇸🇪 Warp - IPv6"
-
 rule-providers:
   ir:
     type: http
@@ -415,7 +394,7 @@ rules:
   - RULE-SET,phishing,REJECT
   - RULE-SET,cryptominers,REJECT
   - RULE-SET,ads,REJECT
-  - MATCH,🚀 انتخاب خودکار (بهترین)
+  - MATCH,GLOBAL
 
 ntp:
   enable: true
