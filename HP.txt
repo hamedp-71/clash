@@ -27,15 +27,15 @@ dns:
   use-hosts: true
   use-system-hosts: false
   nameserver:
+    - '9.9.9.9'
+    - '149.112.112.112'
     - '1.1.1.1'
-    - '2606:4700:4700::1111'
-    - '8.8.8.8'
-    - '2001:4860:4860::8888'
+    - '1.0.0.1'
   proxy-server-nameserver:
+    - '9.9.9.9'
+    - '149.112.112.112'
     - '1.1.1.1'
-    - '2606:4700:4700::1111'
-    - '8.8.8.8'
-    - '2001:4860:4860::8888'
+    - '1.0.0.1'
 tun:
   enable: true
   stack: mixed
@@ -65,8 +65,20 @@ proxies:
     port: 60100
     public-key: "PCHW67+lEKBQI+qRFaRptHN+RrUBIXYZ/v2Xhi+CoRk="
     allowed-ips: ["0.0.0.0/0", "::/0"]
+    reserved: "AAAA"
     udp: true
     mtu: 1280
+    dialer-proxy: ""
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 250
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h4: 3
+      h3: 4
 
   - name: "🇬🇧-hamedp71-1"
     type: wireguard
@@ -76,8 +88,20 @@ proxies:
     port: 60100
     public-key: "PCHW67+lEKBQI+qRFaRptHN+RrUBIXYZ/v2Xhi+CoRk="
     allowed-ips: ["0.0.0.0/0", "::/0"]
+    reserved: "AAAA"
     udp: true
     mtu: 1280
+    dialer-proxy: ""
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 250
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h4: 3
+      h3: 4
 
   - name: "🇳🇱-hamedp71"
     type: wireguard
@@ -87,8 +111,20 @@ proxies:
     port: 60100
     public-key: "PCHW67+lEKBQI+qRFaRptHN+RrUBIXYZ/v2Xhi+CoRk="
     allowed-ips: ["0.0.0.0/0", "::/0"]
+    reserved: "AAAA"
     udp: true
     mtu: 1280
+    dialer-proxy: ""
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 250
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h4: 3
+      h3: 4
 
   - name: "🇺🇦-hamedp71"
     type: wireguard
@@ -98,8 +134,20 @@ proxies:
     port: 60100
     public-key: "PCHW67+lEKBQI+qRFaRptHN+RrUBIXYZ/v2Xhi+CoRk="
     allowed-ips: ["0.0.0.0/0", "::/0"]
+    reserved: "AAAA"
     udp: true
     mtu: 1280
+    dialer-proxy: ""
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 250
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h4: 3
+      h3: 4
 
   - name: "🇷🇺-hamedp71"
     type: wireguard
@@ -109,8 +157,20 @@ proxies:
     port: 60100
     public-key: "PCHW67+lEKBQI+qRFaRptHN+RrUBIXYZ/v2Xhi+CoRk="
     allowed-ips: ["0.0.0.0/0", "::/0"]
+    reserved: "AAAA"
     udp: true
     mtu: 1280
+    dialer-proxy: ""
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 250
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h4: 3
+      h3: 4
 
   - name: "🇺🇸-hamedp71"
     type: wireguard
@@ -120,8 +180,20 @@ proxies:
     port: 60100
     public-key: "PCHW67+lEKBQI+qRFaRptHN+RrUBIXYZ/v2Xhi+CoRk="
     allowed-ips: ["0.0.0.0/0", "::/0"]
+    reserved: "AAAA"
     udp: true
     mtu: 1280
+    dialer-proxy: ""
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 250
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h4: 3
+      h3: 4
 
   - name: "🇩🇪-hamedp71"
     type: wireguard
@@ -131,8 +203,20 @@ proxies:
     port: 60100
     public-key: "PCHW67+lEKBQI+qRFaRptHN+RrUBIXYZ/v2Xhi+CoRk="
     allowed-ips: ["0.0.0.0/0", "::/0"]
+    reserved: "AAAA"
     udp: true
     mtu: 1280
+    dialer-proxy: ""
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 250
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h4: 3
+      h3: 4
 
   - name: "🇲🇩-hamedp71"
     type: wireguard
@@ -142,8 +226,20 @@ proxies:
     port: 60100
     public-key: "PCHW67+lEKBQI+qRFaRptHN+RrUBIXYZ/v2Xhi+CoRk="
     allowed-ips: ["0.0.0.0/0", "::/0"]
+    reserved: "AAAA"
     udp: true
     mtu: 1280
+    dialer-proxy: ""
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 250
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h4: 3
+      h3: 4
 
   - name: "🇳🇱 Amsterdam - IPv4"
     type: ss
@@ -151,6 +247,7 @@ proxies:
     port: 46902
     cipher: chacha20-ietf-poly1305
     password: "2UrSffeNABXGXXfNhoL6xBUnh1RzqMizrQ2s9QfC38P2YPuYPRTqW5zZg6jGisiNhkzM4SRjF6nzvFb18GPtESWoXWjhqyC8"
+    dialer-proxy: "🇮🇷 Warp - IPv4"
 
   - name: "🇮🇷 Warp - IPv4"
     type: wireguard
@@ -161,8 +258,20 @@ proxies:
     port: 1010
     public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
     allowed-ips: ["0.0.0.0/0", "::/0"]
+    reserved: "AAAA"
     udp: true
     mtu: 1280
+    dialer-proxy: ""
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 250
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h4: 3
+      h3: 4
 
   - name: "🇩🇪 Warp - IPv4"
     type: wireguard
@@ -173,8 +282,10 @@ proxies:
     port: 1010
     public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
     allowed-ips: ["0.0.0.0/0", "::/0"]
+    reserved: "AAAA"
     udp: true
     mtu: 1280
+    dialer-proxy: "🇮🇷 Warp - IPv4"
 
   - name: "🇮🇷 Warp - IPv6"
     type: wireguard
@@ -185,8 +296,20 @@ proxies:
     port: 3854
     public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
     allowed-ips: ["0.0.0.0/0", "::/0"]
+    reserved: "AAAA"
     udp: true
     mtu: 1280
+    dialer-proxy: ""
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 250
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h4: 3
+      h3: 4
 
   - name: "🇸🇪 Warp - IPv6"
     type: wireguard
@@ -197,8 +320,10 @@ proxies:
     port: 1010
     public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
     allowed-ips: ["0.0.0.0/0", "::/0"]
+    reserved: "AAAA"
     udp: true
     mtu: 1280
+    dialer-proxy: "🇮🇷 Warp - IPv6"
 
 proxy-groups:
   - name: "✅ انتخاب دستی"
@@ -233,6 +358,7 @@ proxy-groups:
       - "🇲🇩-hamedp71"
       - "🇺🇸-hamedp71"
       - "🇩🇪-hamedp71"
+      - "🇲🇩-hamedp71"
       - "🇳🇱 Amsterdam - IPv4"
       - "🇮🇷 Warp - IPv4"
       - "🇩🇪 Warp - IPv4"
